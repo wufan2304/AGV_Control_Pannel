@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<script type="text/javascript" src="../libs/eventemitter2.min.js"></script>
+<script type="text/javascript" src="../libs/roslib.min.js"></script>
+<script type="text/javascript" src="../libs/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <h1 id="page_name">AGV Control pannel</h1>
+
+  <div id="ros_status_box">
+    <div>    
+      <p>ROS Server IP: </p>
+      <p id="ros_server_ip"></p>
+      <input type="url" name="server_ip" id="server_ip"/>
+      <button type="reset">set</button>
+    </div>
+    
+    <div>    
+      <p>ROS connect status: </p>
+      <p id="ros_status"></p>
+      <button type="reset">refresh</button>
+    </div>
+  </div>
+
+
+  <div id="playground">
+    <button id="station01" class="station">
+      <p>Splice Station</p>
+    </button>
+    <button id="station02" class="station">
+      <p>Glue Station</p>
+    </button>
+    <button id="station03" class="station">
+      <p>CNC Station</p>
+    </button>
+    <button id="station04" class="station">
+      <p>Flip Station</p>
+    </button>
+
+  </div>
+
+  <div id="console_log">
+    <p>console log:</p>
+    <div id="console_log_content">
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+        this is console log content. this is console log content. 
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/server.js"></script>
+
+</body>
+</html>
